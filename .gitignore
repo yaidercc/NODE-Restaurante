@@ -1,0 +1,17 @@
+node_modules/
+
+## Archivos comunmente usados para guardar los registros de la aplicacion
+*.log
+
+## binarios compilados para diferentes sistemas operativos.
+*.exe
+*.dll
+*.so
+
+## Archivos de configuracion con datos sendibles de la app
+config.js
+.env
+
+## Archivos creados por editores
+*.bak
+*.swp
