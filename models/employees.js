@@ -25,6 +25,10 @@ const employeesSchema = Schema({
     },
     phone_number: {
         type: String,
+    },
+    status: {
+        type: Boolean,
+        default: true
     }
 });
 
