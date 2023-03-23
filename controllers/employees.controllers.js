@@ -5,6 +5,7 @@ const Employee= require("../models/employees");
 const createEmployee = async(req, res = response) => {
     try {
         const {
+            IdCard,
             names,
             last_names,
             phone_number,
@@ -13,6 +14,7 @@ const createEmployee = async(req, res = response) => {
         } = req.body;
 
         const empleado = new Employee({
+            IdCard,
             names,
             last_names,
             address,

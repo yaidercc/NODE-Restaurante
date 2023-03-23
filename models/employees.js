@@ -4,6 +4,11 @@ const {
 } = require("mongoose");
 
 const employeesSchema = Schema({
+    IdCard: {
+        type: String,
+        required: [true, "El documento es obligatorio"],
+        unique: true
+    },
     names: {
         type: String,
         required: [true, "Los nombres son obligatorios"]
@@ -20,7 +25,6 @@ const employeesSchema = Schema({
     },
     phone_number: {
         type: String,
-        required: [true, "El numero es obligatorio"]
     }
 });
 
